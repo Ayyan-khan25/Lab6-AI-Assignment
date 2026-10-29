@@ -1,0 +1,62 @@
+[
+  {
+    "query": "What evidence is needed for an illness extension?",
+    "doc": "assessment",
+    "evidence": "a student who experiences illness may request an extension if suitable medical evidence is provided to the course coordinator before the deadline",
+    "split": "dev"
+  },
+  {
+    "query": "How do I recover a forgotten login password?",
+    "doc": "it_password",
+    "evidence": "A user who forgets a password should begin at the sign-in page and select the recovery link",
+    "split": "dev"
+  },
+  {
+    "query": "What should I do when a delivered parcel is damaged?",
+    "doc": "returns",
+    "evidence": "Customers who receive a damaged parcel should contact the support team within 48 hours of delivery",
+    "split": "dev"
+  },
+  {
+    "query": "Can a contractor work from home?",
+    "doc": "workplace",
+    "evidence": "contractors may work remotely only when the signed contract explicitly permits remote work",
+    "split": "dev"
+  },
+  {
+    "query": "What steps help when a printer prints blank pages?",
+    "doc": "printer",
+    "evidence": "Check the ink or toner level, confirm that the correct supplies are installed, and run the printer's cleaning utility",
+    "split": "test"
+  },
+  {
+    "query": "I cannot access my account; where do I start?",
+    "doc": "it_password",
+    "evidence": "A user who forgets a password should begin at the sign-in page and select the recovery link",
+    "split": "test"
+  },
+  {
+    "query": "I was sick before the deadline; what exception applies?",
+    "doc": "assessment",
+    "evidence": "a student who experiences illness may request an extension if suitable medical evidence is provided to the course coordinator before the deadline",
+    "split": "test"
+  },
+  {
+    "query": "My parcel arrived broken; what proof should I send?",
+    "doc": "returns",
+    "evidence": "Customers who receive a damaged parcel should contact the support team within 48 hours of delivery",
+    "split": "test"
+  },
+  {
+    "query": "What are tomorrow's flight prices?",
+    "doc": null,
+    "evidence": null,
+    "split": "test"
+  },
+  {
+    "query": "Who won yesterday's football match?",
+    "doc": null,
+    "evidence": null,
+    "split": "test"
+  }
+]

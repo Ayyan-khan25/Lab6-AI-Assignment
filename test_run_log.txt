@@ -1,0 +1,118 @@
+$ /opt/pyvenv/bin/python task1_tokens.py
+RETURN CODE: 0
+STDOUT:
+Original: 'AI, search!'
+Whitespace: ['AI,', 'search!'] count = 2
+Word-like: ['AI', 'search'] count = 2
+------------------------------------------------------------
+Original: "I can't log in."
+Whitespace: ['I', "can't", 'log', 'in.'] count = 4
+Word-like: ['I', 'can', 't', 'log', 'in'] count = 5
+------------------------------------------------------------
+Original: 'help@example.com'
+Whitespace: ['help@example.com'] count = 1
+Word-like: ['help', 'example', 'com'] count = 3
+------------------------------------------------------------
+Original: 'CS4944'
+Whitespace: ['CS4944'] count = 1
+Word-like: ['CS4944'] count = 1
+------------------------------------------------------------
+Original: ''
+Whitespace: [] count = 0
+Word-like: [] count = 0
+------------------------------------------------------------
+Original: 'یہ ایک مثال ہے'
+Whitespace: ['یہ', 'ایک', 'مثال', 'ہے'] count = 4
+Word-like: ['یہ', 'ایک', 'مثال', 'ہے'] count = 4
+------------------------------------------------------------
+Original: 'Version 2.1 is ready!'
+Whitespace: ['Version', '2.1', 'is', 'ready!'] count = 4
+Word-like: ['Version', '2', '1', 'is', 'ready'] count = 5
+------------------------------------------------------------
+Optional model-tokenizer comparison for two English examples:
+Model tokenizer comparison skipped: No module named 'transformers'
+Install sentence-transformers and ensure model access to run model-token comparison.
+
+STDERR:
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+
+
+$ /opt/pyvenv/bin/python task1_chatbot_check.py
+RETURN CODE: 0
+STDOUT:
+Task 1 FAQ behaviour checks passed.
+
+STDERR:
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+
+
+$ /opt/pyvenv/bin/python task2_chunks.py
+RETURN CODE: 0
+STDOUT:
+Task 2 boundary checks passed.
+
+STDERR:
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+
+
+$ /opt/pyvenv/bin/python task3_retrieval.py
+RETURN CODE: 0
+STDOUT:
+Embedding model unavailable: No module named 'sentence_transformers'
+Continuing with TF-IDF only. Install/download the model to complete embedding comparisons.
+
+Strategy=0; chunk_count=31
+tfidf dev: Hit@3=0.5 MRR@3=0.375 encode_seconds=0.0024 search_seconds=0.0002
+tfidf test: Hit@3=0.25 MRR@3=0.25 encode_seconds=0.0024 search_seconds=0.0002
+
+Strategy=10; chunk_count=38
+tfidf dev: Hit@3=1.0 MRR@3=1.0 encode_seconds=0.0018 search_seconds=0.0001
+tfidf test: Hit@3=0.5 MRR@3=0.375 encode_seconds=0.0018 search_seconds=0.0001
+
+Strategy=sentence; chunk_count=38
+tfidf dev: Hit@3=1.0 MRR@3=0.875 encode_seconds=0.0017 search_seconds=0.0002
+tfidf test: Hit@3=0.5 MRR@3=0.5 encode_seconds=0.0017 search_seconds=0.0002
+
+Wrote retrieval_log.csv (90 ranked rows).
+
+Unanswerable queries are reported separately; top-ranked text is only a candidate, not proof.
+
+STDERR:
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+
